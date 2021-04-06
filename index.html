@@ -5,3 +5,37 @@
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Assign 4 Tree Explorer</title>
+<style>
+
+body {
+  max-width: 960px;
+  margin: 1em auto;
+  padding: 0 1em;
+  font-family: sans-serif;
+}
+
+a:link:not(:hover) {
+  text-decoration: none;
+}
+
+</style>
+<h1>Assign 4 Tree Explorer</h1>
+<p>Here is my Observable <a href="https://next.observablehq.com/@shuyi-liu/assign4-tree-explorer">entire notebook</a></p>
+<script type="module">
+
+// Load the Observable runtime and inspector.
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+
+// Your notebook, compiled as an ES module.
+import notebook from "https://next.observablehq.com/@shuyi-liu/assign4-tree-explorer";
+
+// Load the notebook, observing its cells with a default Inspector that simply
+// renders the value of every cell into the provided DOM node.
+const runtime = new Runtime();
+const main = runtime.module(notebook, Inspector.into(document.body));
+
+</script>
